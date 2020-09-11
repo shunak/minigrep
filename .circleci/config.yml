@@ -21,12 +21,12 @@ executors:
             echo $OS_VERSION | tee /tmp/build-env
             rustc --version | tee /tmp/build-env
 
-  save_cache_:  # `save_cache` は予約語なのでアンダースコアをつける。
+  save_cache_:  # save_cacheは予約語なのでアンダースコアをつける。
   steps:
     - save_cache:
       # CIRCLECI_CACHE_VERSION 環境変数は、キャッシュをパージしたくなった際にセットする（または今までセットしていたのとは異なる文字列をセットする）。
       # CIRCLE_JOB は CircleCI が勝手にセットしてくれる。この例だと `lint`, `readme`, `MSRV (Minimum Supported Rust Version)` などがセットされる。
-      key: cache-cargo-target-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Environment.CIRCLE_JOB }}-{{ checksum "/tmp/build-env" }}-{{ checksum "Cargo.lock" }}
+      key: cache-cargo-target-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Environment.CIRCLE_JOB }}-{{ checksum '/tmp/build-env' }}-{{ checksum 'Cargo.lock' }}
       paths:
         - ~/.cargo
         - target
