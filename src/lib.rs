@@ -3,7 +3,7 @@ use std::error::Error;
 use std::fs::File;
 use std::io::prelude::*;
 
-pub fn run(config: Config) -> Result<(), Box<Error>> {
+pub fn run(config: Config) -> Result<(), Box<dyn Error>> {
     //argument contains config instance
 
     //file not found
