@@ -5,6 +5,8 @@ jobs:
       - image: circleci/rust
     steps:
       - checkout
-      - run: rustup --version
+      - run:
+        name: check Rust version
+        command: rustup --version
       - run: cargo fmt -- --check
       - run: cargo test
