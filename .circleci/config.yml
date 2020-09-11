@@ -8,3 +8,8 @@ jobs:
       - run: rustup -V
       - run: cargo fmt -- --check
       - run: cargo test
+workflows:
+  version: 2.1
+  build_and_test:
+    jobs:
+      - build
