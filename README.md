@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/shunak/minigrep.svg?style=svg&circle-token=53341d4939909cd2847be25c1332a52794d5ba27)](https://app.circleci.com/pipelines/github/shunak/typescript-sandbox)<br>
+
 This is too much simple grep tool by Rust.
 ## Install
 ```
