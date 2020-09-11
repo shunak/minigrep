@@ -6,7 +6,6 @@ jobs:
     steps:
       - checkout
       - run:
-        name: rustup version
         command: rustup --version
       - run:
         name: rustup component add
