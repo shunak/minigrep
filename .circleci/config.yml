@@ -3,7 +3,7 @@ jobs:
   build:
     docker:
       - image: circleci/rust
-    steps:
+    step:
       - checkout
       - run:
         name: rustup version
