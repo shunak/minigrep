@@ -1,1 +1,1 @@
-/Users/syu/projects/minigrep/target/debug/libminigrep.rlib: /Users/syu/projects/minigrep/src/lib.rs
+/Users/syu/minigrep/target/debug/libminigrep.rlib: /Users/syu/minigrep/src/lib.rs
