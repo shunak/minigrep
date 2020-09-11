@@ -4,7 +4,6 @@ jobs:
     docker:
       - image: circleci/rust
     steps:
-      - checkout
       - run:
         name: rustup version
         command: rustup --version
