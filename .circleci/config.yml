@@ -5,9 +5,9 @@ jobs:
       - image: circleci/rust
     steps:
       - checkout
-      - run:
+      - command: rustup --version
         name: rustup version
-        command: rustup --version
+        run: map[]
       - run:
         name: rustup component add
         command: rustup component add clippy rustfmt
