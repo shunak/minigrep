@@ -8,7 +8,7 @@ git clone https://github.com/shunak/minigrep.git
 cd minigrep
 ```
 ```
-cargo run "word you wanna find" "text you wanna search"
+cargo run "word you wanna search" "text you wanna search in"
 ```
 ## Example
 case: you wanna search a word "into" if contains in a sample.txt or not.
