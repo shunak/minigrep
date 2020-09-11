@@ -18,6 +18,6 @@ cargo run into sample.txt
 result
 > _Finished dev [unoptimized + debuginfo] target(s) in 0.00s_<br>
 > _Running `target/debug/minigrep into sample.txt`_<br>
-> and did his best to reach them by jumping as high as he could <span style="color:OrangeRed;">into</span> the air.
+> and did his best to reach them by jumping as high as he could <span style="color: red;">into</span> the air.
 
 like this, a line contains "into" found.
