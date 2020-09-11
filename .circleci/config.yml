@@ -5,6 +5,6 @@ jobs:
       - image: circleci/rust
     steps:
       - checkout
-      - run: rustup --version
+      - run: rustup -V
       - run: cargo fmt -- --check
       - run: cargo test
