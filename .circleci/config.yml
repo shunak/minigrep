@@ -6,6 +6,4 @@ jobs:
     steps:
       - checkout
       - run: cargo fmt -- --check
-      - run: cargo install diesel_cli
-      - run: diesel setup
       - run: cargo test
