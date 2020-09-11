@@ -1,9 +1,10 @@
-version: 2.1
+version: 2
 jobs:
   build:
     docker:
       - image: circleci/rust
     steps:
+      - checkout
       - run:
         name: rustup version
         command: rustup --version
@@ -31,7 +32,7 @@ jobs:
         name: test
         command: cargo test
 workflows:
-  version: 2.1
+  version: 2
   checks:
     jobs:
       - build
