@@ -35,14 +35,14 @@ executors:
       steps:
         - restore_cache:
           keys:
-            - cache-cargo-target-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Environment.CIRCLE_JOB }}-{{ checksum "/tmp/build-env" }}-{{ checksum "Cargo.lock" }}
+            - cache-cargo-target-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Environment.CIRCLE_JOB }}-{{ checksum '/tmp/build-env' }}-{{ checksum 'Cargo.lock' }}
 
               # 依存関係を追加するなどして Cargo.lock に変更があった際も、同一ジョブ・同一環境の最新のキャッシュをリストアする。
               # さもないと、依存関係の微修正でもフルビルドが走ってしまう。
               #
               # CircleCIのキャッシュキーは、上の候補から順番に前方一致で検索される。
               # See: https://circleci.com/docs/ja/2.0/caching/#%E3%82%BD%E3%83%BC%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%89%E3%81%AE%E3%82%AD%E3%83%A3%E3%83%83%E3%82%B7%E3%83%A5
-            - cache-cargo-target-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Environment.CIRCLE_JOB }}-{{ checksum "/tmp/build-env" }}
+            - cache-cargo-target-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Environment.CIRCLE_JOB }}-{{ checksum '/tmp/build-env' }}
 
           jobs:
             lint:
