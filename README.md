@@ -15,7 +15,7 @@ case: you wanna search a word "into" if contains in a sample.txt or not.
 ```
 cargo run into sample.txt
 ```
-result
+### result
 > _Finished dev [unoptimized + debuginfo] target(s) in 0.00s_<br>
 > _Running `target/debug/minigrep into sample.txt`_<br>
 > and did his best to reach them by jumping as high as he could <span style="color: red;">into</span> the air.
